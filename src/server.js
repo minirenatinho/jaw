@@ -70,7 +70,7 @@ io.on('connection', (socket) => {
     ids[socket.id] = numPlayers;
     players[numPlayers] = {
         socket: socket.id,
-        nickname: 'anonymous',
+        nickname: 'anônimo',
         x: -18,
         y: -18,
         width: 36,
@@ -86,7 +86,7 @@ io.on('connection', (socket) => {
     };
 
     //put log
-    const chatUpdate = util.chatPut('['+players[numPlayers].nickname+'] connected', 'green', chatHis, chatHisColor);
+    const chatUpdate = util.chatPut('['+players[numPlayers].nickname+'] conectado', 'green', chatHis, chatHisColor);
     chatHis = chatUpdate.chatHis;
     chatHisColor = chatUpdate.chatHisColor;
 
@@ -140,7 +140,7 @@ io.on('connection', (socket) => {
             if(msg.substring(1, msg.length) != ''){
                 players[id].nickname = msg.substring(1, 16);
 
-                const chatUpdate = util.chatPut('['+players[id].nickname+'] connected', 'green', chatHis, chatHisColor);
+                const chatUpdate = util.chatPut('['+players[id].nickname+'] atualizado', 'green', chatHis, chatHisColor);
                 chatHis = chatUpdate.chatHis;
                 chatHisColor = chatUpdate.chatHisColor;
 
@@ -176,7 +176,7 @@ io.on('connection', (socket) => {
         --numPlayers;
 
         //put log
-        const chatUpdate = util.chatPut('['+players[id].nickname+'] disconnected', 'red', chatHis, chatHisColor);
+        const chatUpdate = util.chatPut('['+players[id].nickname+'] desconectado', 'red', chatHis, chatHisColor);
         chatHis = chatUpdate.chatHis;
         chatHisColor = chatUpdate.chatHisColor;
 

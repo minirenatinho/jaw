@@ -1,7 +1,7 @@
 {
   "name": "jaw",
   "version": "1.0.0",
-  "description": "just another world, a [ js, open world, 2d, pixelated, enter and play, realtime online, browser ] game",
+  "description": "Arena Jerimum é um jogo: javascript, 2D pixelado, entre e jogue, de browser, online com interações em tempo real",
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -10,26 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renatodeyvson/jaw.git"
+    "url": "git+https://github.com/minirenatinho/jaw.git"
   },
   "keywords": [
-    "just",
-    "another",
-    "world",
+    "arena",
+    "jerimun",
     "js",
     "2d",
-    "pixelated",
-    "realtime",
+    "pixelado",
     "online",
     "browser",
-    "game"
+    "jogo"
   ],
-  "author": "renatodeyvson",
+  "author": "minirenatinho",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/renatodeyvson/jaw/issues"
+    "url": "https://github.com/minirenatinho/jaw/issues"
   },
-  "homepage": "https://github.com/renatodeyvson/jaw#readme",
+  "homepage": "https://github.com/minirenatinho/jaw#readme",
   "dependencies": {
     "express": "^4.15.2",
     "socket.io": "^2.0.1"

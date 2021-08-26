@@ -1,18 +1,18 @@
-# jaw
-just another world, a [ js, open world, 2d, pixelated, enter and play, realtime online, browser ] game
-# running
-first install [node.js](https://nodejs.org/en/).
-then install dependencies with:
+# Arena Jerimum
+Arena Jerimum é um jogo: javascript, 2D pixelado, entre e jogue, de browser, online com interações em tempo real.
+# Rodando localmente
+Primeiro certifíque-se de que o [node.js](https://nodejs.org) está instalado na sua máquina.
+Depois instale as dependências executando, na pasta do projeto, o comando:
 ```sh
-> npm install
+> npm i
 ```
-and start dev server (for nodemon)
+Para iniciar o servidor usando nodemon execute:
 ```sh
 > npm run dev
 ```
-or start server (for node)
+Para iniciar o servidor no modo padrão do node execute:
 ```sh
 > npm start
 ```
-# license
-UNLICENSED
+# Licença
+UNLICENSED, use como quiser.

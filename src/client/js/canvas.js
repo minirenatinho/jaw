@@ -117,9 +117,9 @@ const printTutorial = () => {
 
     ctx.fillStyle = 'white';
     ctx.font = 'bold 30px Courier';
-    ctx.fillText('move with \'w\' \'a\' \'s\' \'d\'', 250, 210);
-    ctx.fillText('shoot with \'p\'', 350, 290);
-    ctx.fillText('change your name with \'n\'', 250, 370);
+    ctx.fillText('Mover: \'w\' \'a\' \'s\' \'d\'', 290, 210);
+    ctx.fillText('Atirar jerimum: \'p\'', 310, 290);
+    ctx.fillText('Alterar apelido: \'n\'', 303, 370);
     ctx.font = 'bold 15px Courier';
 };
 
@@ -169,7 +169,8 @@ const printObjects = () => {
 //show qtd of players on screen
 const printnumPlayers = () => {
     ctx.fillStyle = 'white';
-    ctx.fillText('online: '+numPlayers, 830, 30);
+    if(numPlayers == 1) ctx.fillText(numPlayers+' jogador online', 760, 30);
+    else ctx.fillText(numPlayers+' jogadores online', 760, 30);
 };
 
 //show the score on screen
@@ -188,9 +189,9 @@ const printScore = () => {
 
     //personal score
     ctx.font = 'bold 15px Courier';
-    ctx.fillText(myScore, 830, 505);
-    ctx.fillText(myKills, 830, 520);
-    ctx.fillText(myDeaths, 830, 535);
+    ctx.fillText(myKills, 830, 505);
+    ctx.fillText(myDeaths, 830, 520);
+    ctx.fillText(myScore, 830, 535);
 };
 
 //calculate the global and personal score
@@ -211,9 +212,9 @@ const calculateScore = () => {
 
         //personal score
         if (players[i] != undefined && players[i].socket == id){
-            myScore = 'essences: '+players[i].numEssences;
-            myKills = 'kills: '+players[i].kills;
-            myDeaths = 'deaths: '+players[i].deaths;
+            myKills = 'Acertos: '+players[i].kills;
+            myDeaths = 'Vacilos: '+players[i].deaths;
+            myScore = 'Bolinhas: '+(players[i].numEssences+1);
         }
 
     }
